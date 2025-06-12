@@ -1,9 +1,9 @@
 ## System Flow For OIDC Login with Nextjs frontend & GO backend
 
-Frontend (Next.js) ── GET /oidc/login ─▶ Go backend ──▶ Azure Entra
-Azure Entra ──▶ /oidc/login/callback ──▶ Sets session ──▶ Redirects to frontend (/dashboard)
-Frontend ──▶ /me ─▶ Get user info from cookie session
-Logout: Frontend ─▶ /oidc/logout ─▶ Destroys session + Azure logout
+- Frontend (Next.js) ── GET /oidc/login ─▶ Go backend ──▶ Azure Entra
+- Azure Entra ──▶ /oidc/login/callback ──▶ Sets session ──▶ Redirects to frontend (/dashboard)
+- Frontend ──▶ /me ─▶ Get user info from cookie session
+- Logout: Frontend ─▶ /oidc/logout ─▶ Destroys session + Azure logout
 
 # Go Backend with Azure Entra ID OIDC Authentication
 
